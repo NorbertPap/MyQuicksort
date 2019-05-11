@@ -59,4 +59,15 @@ class QuickSortTest {
 
         assertEquals(0, toSort.size());
     }
+
+    @Test
+    void sortingExampleFromVideo() {
+        QuickSort quickSort = new QuickSort();
+
+        List<Integer> toSort = Arrays.asList(7, 8, 7, 4, 10, 3, 5);
+        List<Integer> expected = Arrays.asList(3, 4, 5, 7, 7, 8, 10);
+        quickSort.sort(toSort);
+
+        assertEquals(expected, toSort);
+    }
 }
